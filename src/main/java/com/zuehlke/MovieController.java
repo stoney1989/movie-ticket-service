@@ -33,7 +33,7 @@ public class MovieController {
 		return simpleMovies;		
 	}
 	
-	@GetMapping("/api/v1/movie/{id}")
+	@GetMapping("/api/v1/movies/{id}")
 	@ResponseBody
 	public Movie getMovie(@PathVariable long id) {		
 		return movies.get(id);		
